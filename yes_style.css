@@ -15,7 +15,7 @@ body {
     max-width: 1200px; /* Prevents the layout from becoming too wide on large screens */
 }
 
-.header_text, .gif_container {
+.header_text, .gif_container, .form_container {
     flex: 1; /* Assigns equal space to both elements */
     display: flex;
     justify-content: center;
@@ -44,6 +44,30 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 300px;
 }
+
+/* Rest of the styles for #dateForm and input elements */
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gif_container {
+        margin-right: 0;
+        margin-bottom: 20px; /* Spacing between gif and form on mobile */
+    }
+
+    .form_container {
+        width: 100%; /* Full width on mobile for better visibility */
+    }
+
+    .header_text, .gif_container, .form_container {
+        flex: none; /* Reset flex settings for mobile */
+    }
+}
+
 
 #dateForm {
     display: flex;
