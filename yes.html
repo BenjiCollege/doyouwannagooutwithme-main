@@ -2,17 +2,38 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="./yes_style.css">
-        
+        <!-- Add any additional CSS for styling the form here -->
     </head> 
     <body>
         <div class="container">
-            <div >
-                <h1 class = "header_text">Yeeeyyyy!!</h1>
+            <div>
+                <h1 class="header_text">Yeeeyyyy!!</h1>
             </div>
             <div class="gif_container">
-                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWJocHVhaTZoMnFzdzVqOWozZ3Zpcm1rZGh2N2s1bHIwa3dud2NqcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/bjL20yIdoJ72EIciOb/giphy.gif" alt="Cute animated illustration">
+                <img src="https://media.giphy.com/media/bjL20yIdoJ72EIciOb/giphy.gif" alt="Cute animated illustration">
+            </div>
+            <div class="form_container">
+                <form id="dateForm">
+                    <label for="name">Your Name:</label><br>
+                    <input type="text" id="name" name="name" required><br>
+
+                    <label for="date">Choose a Date:</label><br>
+                    <input type="date" id="date" name="date" required><br>
+
+                    <label for="time">Choose a Time:</label><br>
+                    <input type="time" id="time" name="time" required><br>
+
+                    <input type="submit" value="Schedule Date">
+                </form>
             </div>
         </div>
-       
+
+        <script>
+            document.getElementById('dateForm').addEventListener('submit', function(event){
+                event.preventDefault();
+                // You can add code here to handle the form submission, like sending data to a server or displaying a confirmation message.
+                alert("Date scheduled!");
+            });
+        </script>
     </body> 
 </html>

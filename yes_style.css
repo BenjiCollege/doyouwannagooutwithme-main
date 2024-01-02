@@ -4,20 +4,79 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #F8C8DC;
+    margin: 0; /* Resets default margin */
+}
+
+.container {
+    display: flex;
+    justify-content: space-around; /* Adjusts spacing between the two elements */
+    align-items: center;
+    width: 80%; /* Adjust the width as needed */
+    max-width: 1200px; /* Prevents the layout from becoming too wide on large screens */
+}
+
+.header_text, .gif_container {
+    flex: 1; /* Assigns equal space to both elements */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .header_text {
-    font-family: 'Nunito';
+    font-family: 'Nunito', sans-serif;
     font-size: 50px;
     font-weight: bold;
     color: white;
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
 }
 
 .gif_container {
+    margin-right: 20px; /* Spacing between gif and form */
+}
+
+.form_container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+#dateForm {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#dateForm label {
+    font-family: 'Nunito', sans-serif;
+    color: #333;
+    font-size: 16px;
+}
+
+#dateForm input[type="text"],
+#dateForm input[type="date"],
+#dateForm input[type="time"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: 'Nunito', sans-serif;
+}
+
+#dateForm input[type="submit"] {
+    background-color: #FFA07A;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+}
+
+#dateForm input[type="submit"]:hover {
+    background-color: #FF7F50;
 }
