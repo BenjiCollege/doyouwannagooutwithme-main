@@ -15,7 +15,7 @@ body {
     max-width: 1200px; /* Prevents the layout from becoming too wide on large screens */
 }
 
-.header_text, .gif_container, .form_container {
+.header_text, .gif_container {
     flex: 1; /* Assigns equal space to both elements */
     display: flex;
     justify-content: center;
