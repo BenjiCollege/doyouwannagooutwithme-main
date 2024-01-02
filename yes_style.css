@@ -52,15 +52,21 @@ body {
     .container {
         flex-direction: column;
         align-items: center;
+        width: 90%; /* Adjust width for mobile */
     }
 
-    .gif_container {
-        margin-right: 0;
-        margin-bottom: 20px; /* Spacing between gif and form on mobile */
+    .header_text {
+        font-size: 30px; /* Smaller font size for mobile */
+    }
+
+    .gif_container img {
+        max-width: 100%; /* Makes image responsive */
+        height: auto; /* Maintain aspect ratio */
     }
 
     .form_container {
-        width: 100%; /* Full width on mobile for better visibility */
+        width: 100%; /* Full width on mobile */
+        padding: 15px; /* Adjust padding for mobile */
     }
 
     .header_text, .gif_container, .form_container {
