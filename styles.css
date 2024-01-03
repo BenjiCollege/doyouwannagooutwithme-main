@@ -2,8 +2,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    min-height: 100vh; /* Changed to min-height */
     background-color: #F8C8DC;
+    margin: 0;
 }
 
 #noButton {
