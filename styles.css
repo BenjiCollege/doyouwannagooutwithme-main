@@ -60,18 +60,15 @@ body {
     body {
         height: 100vh;
     }
-
     .header_text {
         font-size: 20px;
     }
-
     img {
         height: 60vh;
     }
-
     .btn {
-        padding: 10px 18px;
-        font-size: 12px;
+        padding: 20px 40px; /* Increased padding for larger button */
+        font-size: 20px; /* Larger font size for readability */
     }
 }
 
@@ -79,17 +76,14 @@ body {
     body {
         height: 90vh;
     }
-
     .header_text {
         font-size: 28px;
     }
-
     img {
         height: 60vh;
     }
-
     .btn {
-        padding: 15px 25px;
-        font-size: 14px;
+        padding: 18px 40px; /* Further increased padding for larger button */
+        font-size: 20px; /* Larger font size for readability */
     }
 }
