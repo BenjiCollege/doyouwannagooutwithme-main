@@ -1,7 +1,7 @@
-//✨[doyouwannagooutwithme.com](http://doyouwannagooutwithme.com) 
+✨[doyouwannagooutwithme.com](http://doyouwannagooutwithme.com) 
 
-//[Created by Elif Gazioğlu](https://github.com/elifgazioglu)
-//A website to invite your lover for a date 🥰
+[Created by Elif Gazioğlu](https://github.com/elifgazioglu)
+A website to invite your lover for a date 🥰
 
 [My Version](https://doyouwannagooutwithme-main.vercel.app/)
 
